@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pm="http://primefaces.org/mobile">
+
+<f:view renderKitId="PRIMEFACES_MOBILE" />
+<h:head>
+	<h:outputScript name="jquery/jquery-plugins.js" library="primefaces"/>
+</h:head>
+
+<h:body>
+
+	<pm:page id="mostrar">
+        <pm:header title="Escolha seu Profissional" style="background-color:#143352; color:white;"/>
+        
+		<pm:content>
+		 
+			<h:form id="frmEscolha">
+			    <h:outputText id="mostrarEscolha" 
+					 value="#{esc.mostrarEscolha}"/>
+				<p:commandButton value="Voltar" 
+					action="escolha.ifba" style="background-color:#000000; color:white; clear:both;"/>
+			</h:form>
+		</pm:content>
+
+	</pm:page>
+
+</h:body>
+
+</html>
