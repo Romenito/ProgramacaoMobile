@@ -19,9 +19,13 @@
 		<pm:content>
 		 
 			<h:form id="frmEscolha">
-			    <h:outputText id="mostrarEscolha" 
-					 value="#{esc.mostrarEscolha}"/>
-				<p:commandButton value="Voltar" 
+			 <p:fieldset style="border:solid 3px;">
+        <h:panelGrid style="text-align:center; widht:250px;" >
+            <h:outputText
+                value="#{esc.mostrarEscolha}" style="font-size:150%;" />
+        </h:panelGrid>
+    </p:fieldset>
+            	<p:commandButton value="Voltar" 
 					action="escolha.ifba" style="background-color:#000000; color:white; clear:both;"/>
 			</h:form>
 		</pm:content>

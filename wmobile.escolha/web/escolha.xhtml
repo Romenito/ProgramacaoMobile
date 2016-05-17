@@ -21,8 +21,8 @@
 		<pm:content>
                 <h:form id="frmEscolha">
                      <p:dataList id="IdEscolha" var="escolhe" value="#{esc.profissionais}">
-                        <p:commandLink value="#{escolhe}" action="resultado.ifba">
-                            <f:setPropertyActionListener value="#{escolhe}" target="#{esc.profissionalEscolhido}" />
+                        <p:commandLink  style="text-align: center; background-color:#b3b3ff; color:white;" value="#{escolhe}" action="resultado.ifba">
+                            <f:setPropertyActionListener   value="#{escolhe}" target="#{esc.profissionalEscolhido}"  />
                         </p:commandLink>
                     </p:dataList>
                 </h:form>
