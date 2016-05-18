@@ -56,6 +56,10 @@ public class Escolha {
 		this.telefone = telefone;
 	}
 
+	public String getMostrarEscolha() {
+		return mostrar;
+	}
+
 	public List<String> getProfissionais() {
 		List<String> escolha = new ArrayList<String>();
 		escolha.add("Arquiteto");
@@ -87,10 +91,10 @@ public class Escolha {
 		profissionais.setProximoProfissional(new ProfissionalCarpinteiro());
 		profissionais.setProximoProfissional(new ProfissionalPintor());
 
+		System.out.println(" Email enviado para o devido profissional contendo os seguintes dados: Nome: " + nome + " "
+				+ sobrenome + ", E-mail: " + email + " e Telefone: " + telefone);
 		mostrar = profissionais.escolher(escolhe);
+
 	}
 
-	public String getMostrarEscolha() {
-		return mostrar;
-	}
 }

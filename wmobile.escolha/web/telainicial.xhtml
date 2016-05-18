@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pm="http://primefaces.org/mobile">
+
+<f:view renderKitId="PRIMEFACES_MOBILE" />
+
+<h:head>
+	<h:outputScript name="jquery/jquery-plugins.js" library="primefaces" />
+</h:head>
+
+
+<h:body>
+
+	<pm:page id="escolheProfissional">
+
+		<pm:header title="Escolha Seu Profissional"
+			style="background-color:#143352; color:white;" />
+		<pm:content>
+			<h:form id="frmEscolha">
+				<p:outputPanel>
+					<div align="center">
+						<p:graphicImage value="/imgs/prof.jpg" width="400" height="350" />
+						<p />
+					</div>
+				</p:outputPanel>
+				<div align="center" style="font-weight: bold">
+					<h:outputText
+						value="Aplicação desenvolvida para uma maior facilidade à nossos clientes, auxiliando na busca pelos os melhores profissionais na área da construção civil,
+                     recomendados por nossa instituição para todas as etapas do seu empreendimento." />
+				</div>
+				<p:commandButton value="Acessar" icon="ui-icon-check"
+					action="cadastro.ifba"
+					style="background-color:#000000; color:white;" />
+			</h:form>
+		</pm:content>
+
+	</pm:page>
+
+</h:body>
+
+</html>

@@ -1,6 +1,6 @@
 package br.edu.ifba.mobile.wmobile.escolha.cadeia;
 
-public class ProfissionalPedreiro extends Profissional{
+public class ProfissionalPedreiro extends Profissional {
 
 	@Override
 	public String escolher(EscolhaProfissional escolha) {

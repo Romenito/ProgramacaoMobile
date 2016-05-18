@@ -9,25 +9,30 @@
 <f:view renderKitId="PRIMEFACES_MOBILE" />
 
 <h:head>
-	<h:outputScript name="jquery/jquery-plugins.js" library="primefaces"/>
-	
+	<h:outputScript name="jquery/jquery-plugins.js" library="primefaces" />
+
 </h:head>
 
 <h:body>
 
 	<pm:page id="escolhaProfissional">
 
-		<pm:header title="Escolha seu Profissional" style="background-color:#143352; color:white;"/>
+		<pm:header title="Escolha seu Profissional"
+			style="background-color:#143352; color:white;" />
 		<pm:content>
-                <h:form id="frmEscolha">
-                     <p:dataList id="IdEscolha" var="escolhe" value="#{esc.profissionais}">
-                        <p:commandLink  style="text-align: center; background-color:#b3b3ff; color:white;" value="#{escolhe}" action="resultado.ifba">
-                            <f:setPropertyActionListener   value="#{escolhe}" target="#{esc.profissionalEscolhido}"  />
-                        </p:commandLink>
-                    </p:dataList>
-                </h:form>
-            </pm:content> 
-     
+			<h:form id="frmEscolha">
+				<p:dataList id="IdEscolha" var="escolhe"
+					value="#{esc.profissionais}">
+					<p:commandLink
+						style="text-align: center; background-color:#b3b3ff; color:white;"
+						value="#{escolhe}" action="resultado.ifba">
+						<f:setPropertyActionListener value="#{escolhe}"
+							target="#{esc.profissionalEscolhido}" />
+					</p:commandLink>
+				</p:dataList>
+			</h:form>
+		</pm:content>
+
 	</pm:page>
 
 </h:body>

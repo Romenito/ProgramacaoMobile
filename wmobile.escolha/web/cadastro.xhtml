@@ -9,20 +9,23 @@
 <f:view renderKitId="PRIMEFACES_MOBILE" />
 
 <h:head>
-	<h:outputScript name="jquery/jquery-plugins.js" library="primefaces"/>
+	<h:outputScript name="jquery/jquery-plugins.js" library="primefaces" />
 </h:head>
 
 
-<h:body >
+<h:body>
 
 	<pm:page id="escolheProfissional">
 
-		<pm:header title="Escolha Seu Profissional" style="background-color:#143352; color:white;"/>
-		<pm:header title="BEM VINDO !!" style="background-color:#b3b3ff; color:black;" />
-		<pm:header title="Informações para Contato" style="background-color:#143352; color:white;"/>
+		<pm:header title="Escolha Seu Profissional"
+			style="background-color:#143352; color:white;" />
+		<pm:header title="BEM VINDO !!"
+			style="background-color:#b3b3ff; color:black;" />
+		<pm:header title="Informações para Contato"
+			style="background-color:#143352; color:white;" />
 		<pm:content>
 			<h:form id="frmEscolha">
-			   <p:outputLabel value="Digite o seu Nome:" />
+				<p:outputLabel value="Digite o seu Nome:" />
 				<p:inputText value="#{esc.nome}" />
 				<p:outputLabel value="Digite o seu Sobrenome:" />
 				<p:inputText value="#{esc.sobrenome}" />
@@ -30,7 +33,7 @@
 				<p:inputText value="#{esc.email}" />
 				<p:outputLabel value="Digite o seu Telefone:" />
 				<p:inputText value="#{esc.telefone}" />
-				<p:commandButton value="Entrar" action="escolha.ifba" style="background-color:#000000; color:white;" />
+				<p:commandButton value="Enviar" action="escolha.ifba" style="background-color:#000000; color:white;" />
 			</h:form>
 		</pm:content>
 
