@@ -7,7 +7,7 @@ public class ProfissionalArquiteto extends Profissional {
 	public String escolher(EscolhaProfissional escolha) {
 		if (escolha == EscolhaProfissional.Arquiteto) {
 			return "Obrigado pela a confiança!! Aguarde pois o Arquiteto João Gustavo Soares" + "\n"
-					+ " de número CREA:35769002-98 entrará em contato com você.";
+					+ " de número CAU:35769002-98 entrará em contato com você.";
 		}
 		return proximo.escolher(escolha);
 	}
