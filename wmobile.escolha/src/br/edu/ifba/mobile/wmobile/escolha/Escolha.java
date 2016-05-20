@@ -15,7 +15,7 @@ import br.edu.ifba.mobile.wmobile.escolha.cadeia.ProfissionalPedreiro;
 import br.edu.ifba.mobile.wmobile.escolha.cadeia.ProfissionalPintor;
 
 @ManagedBean(name = "esc")
-@SessionScoped // impede q sejam criadas diversas instancias, uma para cada xml.
+@SessionScoped 
 
 public class Escolha {
 	private String email = "";
